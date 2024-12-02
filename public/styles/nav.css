@@ -3,7 +3,11 @@
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 120px;
+  z-index: 1000;
   background-color: #4056a1;
   color: #FFFFFF;
   display: flex;
@@ -34,6 +38,6 @@ nav span {
 #right-container .fa-solid {
   font-size: 18px;
   margin-top: 0.5em;
-  color: red;
+  color: #eb0a0a;
 }
 

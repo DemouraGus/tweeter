@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFBF00;
+  background-image: url("/images/absurdity.png");
+}
+
