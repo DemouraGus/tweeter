@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+.new-tweet {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+}
+
+.new-tweet label {
+  display: block;
+  margin-bottom: 15px;
+  border-bottom: 4px solid black;
+  padding-bottom: 15px;
+}
+
+.button-counter-container button {
+  color: #FFFFFF;
+  background-color: #4056a1;
+}
+
+.button-counter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: "Bungee", sans-serif;
+}

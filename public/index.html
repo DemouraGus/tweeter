@@ -11,7 +11,8 @@
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />   
-    <link rel="stylesheet" href="/styles/header.css" type="text/css" />   
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
@@ -44,9 +45,17 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis placeat atque, deserunt officia, deleniti, in veritatis quas temporibus accusamus corrupti eum nostrum perferendis vero quidem omnis expedita. Quo, excepturi rerum!</h1>
-      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, consectetur odit recusandae ea deleniti odio maxime iusto iste? Odit enim debitis nesciunt autem inventore reiciendis facilis vitae saepe voluptatem cumque?</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, illum corrupti illo quaerat veniam quae omnis, magni neque cumque, possimus eius nostrum nulla quia quos ipsa laudantium mollitia? Similique, doloremque?</p>
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form method="POST" action="/tweets/">
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
+          <div class="button-counter-container">
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
     </main>
   </body>
 </html>
