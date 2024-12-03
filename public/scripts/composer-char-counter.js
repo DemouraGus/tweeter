@@ -12,9 +12,9 @@ $(document).ready(function() {
     counter.text(charactersLeft);
 
     if (charactersLeft < 0) {
-      $('.counter').css('color', 'red')
+     counter.css('color', 'red')
     } else {
-      $('.counter').css('color', 'black')
+     counter.css('color', 'black')
     }
   });  
 });
