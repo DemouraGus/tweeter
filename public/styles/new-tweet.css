@@ -9,9 +9,20 @@
 
 .new-tweet label {
   display: block;
+
+}
+
+#tweet-text {
+  width: 100%;
+  font-family: inherit;
+  font-size: 85%;
+  background-color: inherit;
+  border: none;
+  outline: none;
   margin-bottom: 15px;
   border-bottom: 4px solid black;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 2px;
 }
 
 .button-counter-container button {
