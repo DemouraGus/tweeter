@@ -37,3 +37,10 @@
   width: 100%;
   font-family: "Bungee", sans-serif;
 }
+
+#alert-message {
+  display: none;
+  border: 5px solid red;
+  color: red;
+  padding: 5px 20px;
+}

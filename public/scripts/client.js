@@ -61,12 +61,16 @@ $(document).ready(function() {
       // extract the #tweet-text value and trim empty spaces
       const tweetText = $('#tweet-text').val().trim();
 
+      const $alertMessage = $('#alert-message');
+      $alertMessage.hide();
+
       //If it's empty return an empty alert
       if (!tweetText) {
-        alert('Tweet cannot be empty');
+        $alertMessage.html('<i class="fa-solid fa-triangle-exclamation"></i>Tweet cannot be empty!<i class="fa-solid fa-triangle-exclamation"></i>').slideDown();
       } else if (tweetText.length > 140) {
         //If it's too long return a too long alert
-        alert('Tweet is too long');
+        $alertMessage.html('<i class="fa-solid fa-triangle-exclamation"></i>Too long! 140 is a beatiful number and nothing can be longer!<i class="fa-solid fa-triangle-exclamation"></i>').slideDown();
+
       } else {
 
         $.ajax({
