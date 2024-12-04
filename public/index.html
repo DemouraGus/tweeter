@@ -20,6 +20,7 @@
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
@@ -28,11 +29,17 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
+
     <nav>
-      <span>tweeter</span>
-      <span id="right-container">
-        <b>Write</b> a new tweet 
-        <i class="fa-solid fa-angles-down"></i></span>
+      <h3>tweeter</h3>
+      <div id="right-container">
+        <p >
+          <b>Write</b> a new tweet
+        </p>
+        <p>
+          <i class="fa-solid fa-angles-down"></i>
+        </p>
+      </div>
     </nav>
 
     <header class="main-header">
@@ -47,9 +54,10 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form method="POST" action="/tweets/">
+        <form>
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
           <div class="button-counter-container">
@@ -58,8 +66,10 @@
           </div>
         </form>
       </section>
+
       <section class="tweet-container">
       </section>
+
     </main>
   </body>
 </html>

@@ -18,26 +18,26 @@ nav {
   padding-right: 1.5em;
 }
 
-nav span {
+nav h3 {
   font-family: "Bungee", sans-serif;
 }
 
 #right-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   font-family: "Source Sans 3", sans-serif;
   font-size: 18px;
-  text-align: center;
 }
 
-#right-container b {
-  white-space: nowrap;
+#right-container p {
+  margin: 0
 }
 
 #right-container .fa-solid {
-  font-size: 18px;
-  margin-top: 0.5em;
   color: #eb0a0a;
+  padding-top: 5px;
+  margin: 0
 }
 
