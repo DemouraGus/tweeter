@@ -33,6 +33,7 @@ $(document).ready(function() {
     
     
     const renderTweets = function(tweets) {
+      $('.tweet-container').empty();
       for (const tweet of tweets) {
         const $tweet = createTweetElement(tweet)
         $('.tweet-container').prepend($tweet);
@@ -48,10 +49,32 @@ $(document).ready(function() {
         }
       });
     };
-    
+
     $('form').on('submit', function(event){
       event.preventDefault();
       const serializedData = $(this).serialize();
+
+      // console.log($('#tweet-text').val());
+      // extract the #tweet-text value and check it's length
+      const tweetText = $('#tweet-text').val();
+
+      //If it's empty return an empty alert
+      if (!tweetText) {
+        alert('Tweet cannot be empty');
+      } else if (tweetText.length > 140) {
+        //If it's too long return a too long alert
+        alert('Tweet is too long');
+      } else {
+
+        $.ajax({
+          method: 'POST',
+          url: '/tweets',
+          data: serializedData,
+          success: (res) => {
+            loadTweets();
+          }
+        });
+      }
     });
     
     loadTweets();
