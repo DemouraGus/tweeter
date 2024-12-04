@@ -11,6 +11,7 @@ $(document).ready(function() {
     
     const timestamp = tweetData.created_at;
     const timeSinceTimestamp = timeago.format(timestamp);
+    const safeText = document.createTextNode(tweetData.content.text);
     
     const $tweet = $(`
       <article>
@@ -19,13 +20,15 @@ $(document).ready(function() {
       <span class="user-tag">${tweetData.user.handle}</span>
       </header>
       <div>
-      <p>${tweetData.content.text}</p>
+      <p></p>
       </div>
       <footer>
       <span class="timestamp">${timeSinceTimestamp}</span>
       <span class="icons"><i class="fa-solid fa-flag"></i><i class="fa-solid fa-retweet"></i><i class="fa-solid fa-heart"></i></span>
       </footer>
       </article>`);
+
+      $tweet.find('p').append(safeText);
       
       return $tweet;
     };
@@ -55,8 +58,8 @@ $(document).ready(function() {
       const serializedData = $(this).serialize();
 
       // console.log($('#tweet-text').val());
-      // extract the #tweet-text value and check it's length
-      const tweetText = $('#tweet-text').val();
+      // extract the #tweet-text value and trim empty spaces
+      const tweetText = $('#tweet-text').val().trim();
 
       //If it's empty return an empty alert
       if (!tweetText) {
@@ -71,6 +74,7 @@ $(document).ready(function() {
           url: '/tweets',
           data: serializedData,
           success: (res) => {
+            $('#tweet-text').val('');
             loadTweets();
           }
         });
