@@ -11,6 +11,7 @@ $(document).ready(function() {
     
     const timestamp = tweetData.created_at;
     const timeSinceTimestamp = timeago.format(timestamp);
+    // Make the content of the tweet safe against XSS attacks
     const safeText = document.createTextNode(tweetData.content.text);
     
     const $tweet = $(`
@@ -36,6 +37,7 @@ $(document).ready(function() {
     
     
   const renderTweets = function(tweets) {
+    // empty the container to avoid doubling the messages
     $('.tweet-container').empty();
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
