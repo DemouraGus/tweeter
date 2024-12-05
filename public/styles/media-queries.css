@@ -6,15 +6,28 @@
   .main-header {
     float: none;
     width: 100%;
+    height: 200px;
     margin: 0;
+    font-size: 0.75em;
+    padding: 0px;
+  }
+  .main-header h2 {
+    margin: 0px;
+    padding: 0px;
+  }
+  .main-header img {
+    width: 6em;
+    margin: 0px;
   }
   .layout {
     flex-direction: column;
   }
   .new-tweet{
-    margin: 25px
+    margin: 25px;
+    font-size: 75%;
   }
   .tweet-container {
-    margin: 0px 25px 25px 25px
+    margin: 0px 25px 25px 25px;
+    font-size: 75%;
   }
 }
