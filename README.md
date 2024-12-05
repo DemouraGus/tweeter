@@ -1,16 +1,20 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone.
+Tweeter is a simple, single-page Twitter clone made for the Lighthouse Labs Webdevelopment Bootcamp!
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
+## Overview
 
-## Getting Started
+This project uses AJAX request to update the page without the need to refresh once a tweet is posted. The user will get an error message for empty tweets and if the tweet is longer than 140 characters.
 
-1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
-2. Clone your repository onto your local device.
-3. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
-4. Go to <http://localhost:8080/> in your browser.
+The length of the tweet can be followed by the character count on the bottom right side of the new tweet textarea and it will turn red if the length goes over the set limit of 140 characters.
+
+## Final Product
+!["Deskto view of the tweeter app"] (https://github.com/DemouraGus/tweeter/blob/master/docs/desktop-view.png)
+!["Tablet view of the tweeter app"] (https://github.com/DemouraGus/tweeter/blob/master/docs/tablet-view.png)
+!["New tweet uploads on top of the page"] (https://github.com/DemouraGus/tweeter/blob/master/docs/new-tweet-top.png)
+!["Error message for empty tweet"] (https://github.com/DemouraGus/tweeter/blob/master/docs/empty-tweet-error.png)
+!["Error message for tweet longer than 140 characters"] (https://github.com/DemouraGus/tweeter/blob/master/docs/long-tweet-error.png)
+
 
 ## Dependencies
 
