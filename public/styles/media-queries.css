@@ -1,0 +1,20 @@
+@media only screen and (max-width: 1024px) {
+  nav {
+    background-color: #FFBF00;
+    background-image: url("/images/absurdity.png");
+  }
+  .main-header {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+  .layout {
+    flex-direction: column;
+  }
+  .new-tweet{
+    margin: 25px
+  }
+  .tweet-container {
+    margin: 0px 25px 25px 25px
+  }
+}

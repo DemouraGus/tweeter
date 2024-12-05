@@ -33,3 +33,9 @@ body {
   margin: 0 auto;
   background-color: inherit;
  }
+
+ .layout {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+ }
