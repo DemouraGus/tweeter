@@ -9,11 +9,21 @@ This project uses AJAX request to update the page without the need to refresh on
 The length of the tweet can be followed by the character count on the bottom right side of the new tweet textarea and it will turn red if the length goes over the set limit of 140 characters.
 
 ## Final Product
-!["Deskto view of the tweeter app"] (https://github.com/DemouraGus/tweeter/blob/master/docs/desktop-view.png)
-!["Tablet view of the tweeter app"] (https://github.com/DemouraGus/tweeter/blob/master/docs/tablet-view.png)
-!["New tweet uploads on top of the page"] (https://github.com/DemouraGus/tweeter/blob/master/docs/new-tweet-top.png)
-!["Error message for empty tweet"] (https://github.com/DemouraGus/tweeter/blob/master/docs/empty-tweet-error.png)
-!["Error message for tweet longer than 140 characters"] (https://github.com/DemouraGus/tweeter/blob/master/docs/long-tweet-error.png)
+
+## Desktop view
+!["screenshot of the desktop view of the tweeter app"](https://github.com/DemouraGus/tweeter/blob/master/docs/desktop-view.png)
+
+## Table view
+!["screenshot of the tablet view of the tweeter app"](https://github.com/DemouraGus/tweeter/blob/master/docs/tablet-view.png)
+
+## New Tweet uploads on top of the page
+!["screenshot of new tweet uploads on top of the page"](https://github.com/DemouraGus/tweeter/blob/master/docs/new-tweet-top.png)
+
+## Empty Tweet error message
+!["screenshot of error message for empty tweet"](https://github.com/DemouraGus/tweeter/blob/master/docs/empty-tweet-error.png)
+
+## Long Tweet error message
+!["screenshot of error message for tweet longer than 140 characters"](https://github.com/DemouraGus/tweeter/blob/master/docs/long-tweet-error.png)
 
 
 ## Dependencies
